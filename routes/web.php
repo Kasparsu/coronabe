@@ -16,3 +16,4 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/api/corona/{url:[A-Za-z0-9/-]+}', 'CoronaController@proxy');
+$router->get('/api/geojson', 'CoronaController@geojson');
